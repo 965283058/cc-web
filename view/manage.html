@@ -16,7 +16,7 @@
     <el-button type="text" @click="vo.dialogVisible = true">点击添加</el-button>
 
     <el-dialog title="提示" :visible.sync="vo.dialogVisible" width="30%">
-        <span>Key:<input type="text" v-model="user.key"></span>
+        <span>Key:<input type="text" v-model.trim="user.key"></span>
         <span slot="footer" class="dialog-footer">
     <el-button @click="vo.dialogVisible = false">取 消</el-button>
     <el-button type="primary" @click="add">确 定</el-button>
